@@ -18,9 +18,9 @@ public class Principal {
 		Locacao locacao = service.alugarFilme(usuario, filme);
 		
 		// Verificacao
-		System.out.println(locacao.getValor());
-		System.out.println(locacao.getDataLocacao());
-		System.out.println(locacao.getDataRetorno());
+		System.out.println(locacao.getValor() == 2.0);
+		System.out.println(DataUtils.isMesmaData(locacao.getDataLocacao(), new Date()));
+		System.out.println(DataUtils.isMesmaData(locacao.getDataRetorno(), DataUtils.obterDataComDiferencaDias(2)));
 	}
 
 }
