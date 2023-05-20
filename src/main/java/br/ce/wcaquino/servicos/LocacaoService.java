@@ -9,6 +9,11 @@ import br.ce.wcaquino.entidades.Locacao;
 import br.ce.wcaquino.entidades.Usuario;
 
 public class LocacaoService {
+
+	public String vPublica;
+	protected String vProtegida;
+	private String vPrivada;
+	String vDefault;
 	
 	public Locacao alugarFilme(Usuario usuario, Filme filme) {
 		Locacao locacao = new Locacao();
