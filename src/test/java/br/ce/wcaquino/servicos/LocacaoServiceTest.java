@@ -14,7 +14,7 @@ public class LocacaoServiceTest {
 	
 	@Test
 	public void teste() {
-		// Cenário
+		// Cenï¿½rio
 		LocacaoService service = new LocacaoService();
 		Usuario usuario = new Usuario("Beatriz");
 		Filme filme = new Filme("John Wick III", 2, 5.00);
